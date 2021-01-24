@@ -72,7 +72,7 @@
 <version>2.19.1</version>  
 <configuration>  
 <suiteXmlFiles>  
-<suiteXmlFile>C:\Users\famk1\git\repository2\Page_Object_Model\testng.xml</suiteXmlFile>
+<suiteXmlFile>Page_Object_Model\testng.xml</suiteXmlFile>
 </suiteXmlFiles>  
 </configuration>  
 </plugin>
