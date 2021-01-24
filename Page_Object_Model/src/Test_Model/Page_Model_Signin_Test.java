@@ -17,7 +17,7 @@ public class Page_Model_Signin_Test {
 	Page_Object_Signin Y;
 @BeforeTest
 	public void Setup() {
-	System.setProperty("webdriver.chrome.driver", "D:\\QA Study\\Selenium\\Driverexes\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 	Driver.manage().window().maximize();
 	Driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	String URL1 = ("http://automationpractice.com/index.php");

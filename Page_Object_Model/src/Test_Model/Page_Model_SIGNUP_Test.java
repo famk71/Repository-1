@@ -21,7 +21,7 @@ public class Page_Model_SIGNUP_Test {
 	
 @BeforeTest
 	public void Setup() {
-	System.setProperty("webdriver.chrome.driver", "D:\\QA Study\\Selenium\\Driverexes\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 	Driver=new ChromeDriver();
 	Driver.manage().window().maximize();
 	Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

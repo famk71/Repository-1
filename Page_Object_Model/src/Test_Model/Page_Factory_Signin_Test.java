@@ -19,7 +19,7 @@ public class Page_Factory_Signin_Test {
 @BeforeTest
 	public void Setup() {
 	Driver= new ChromeDriver();
-	System.setProperty("webdriver.chrome.driver", "D:\\QA Study\\Selenium\\Driverexes\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 	Driver.manage().window().maximize();
 	Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	String URL1 = ("http://automationpractice.com/index.php");
