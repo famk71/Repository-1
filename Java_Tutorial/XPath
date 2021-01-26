@@ -1,0 +1,31 @@
+XPath using one attribute ---    	  	   //tagname[@attribute='value']
+
+
+XPath using 2 attributes-----             //input[@id='search_query_top'][@name='search_query']
+
+
+XPath using contains --------             //tagname[contains(@attribute,'value')]
+
+
+XPath using starts-with -----       	  //tagname[starts-with(@attribute,'value')]
+
+
+XPath using and -------------         	  //tagname[starts-with(@attribute,'value')and(@attribute='value')]
+
+
+XPath using or --------------             //tagname[starts-with(@attribute,'value') or (@attribute='value')]
+
+
+XPath using both and & or----    	  	  //tagname[(starts-with(@attrib,'value') or (@attrib='value') ) and (@attrib='value')]
+
+
+XPath using text()-----------	         //tagname[text()='Contact us']
+
+
+XPath using contains text----      		 //tagname[contains(text(),'Sign in')]
+
+XPath using contains and
+ general expression (.)------		     //tagname[contains(.,'value')]
+
+
+XPath using preceding--------	         //tagname/button/preceding::input[@name='value']
