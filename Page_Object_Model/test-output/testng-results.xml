@@ -1,59 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-28T03:49:33 EDT" name="Suite" finished-at="2021-04-28T03:50:47 EDT" duration-ms="74757">
+  <suite started-at="2021-04-28T03:57:45 EDT" name="Default suite" finished-at="2021-04-28T03:58:07 EDT" duration-ms="21892">
     <groups>
     </groups>
-    <test started-at="2021-04-28T03:49:33 EDT" name="Test" finished-at="2021-04-28T03:50:47 EDT" duration-ms="74757">
-      <class name="Test_Model.Page_Factory_Signin_Test">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Test_Model.Page_Factory_Signin_Test@6fe7aac8]" started-at="2021-04-28T03:49:33 EDT" name="Setup" finished-at="2021-04-28T03:49:41 EDT" duration-ms="8115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="OpenSignInPage()[pri:0, instance:Test_Model.Page_Factory_Signin_Test@6fe7aac8]" started-at="2021-04-28T03:50:03 EDT" name="OpenSignInPage" finished-at="2021-04-28T03:50:09 EDT" duration-ms="6078" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenSignInPage -->
-      </class> <!-- Test_Model.Page_Factory_Signin_Test -->
-      <class name="Test_Model.Page_Model_Signin_Test">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Test_Model.Page_Model_Signin_Test@659a969b]" started-at="2021-04-28T03:49:55 EDT" name="Setup" finished-at="2021-04-28T03:50:03 EDT" duration-ms="7663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="OpenSignInPage()[pri:0, instance:Test_Model.Page_Model_Signin_Test@659a969b]" started-at="2021-04-28T03:50:29 EDT" name="OpenSignInPage" finished-at="2021-04-28T03:50:36 EDT" duration-ms="6885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenSignInPage -->
-      </class> <!-- Test_Model.Page_Model_Signin_Test -->
+    <test started-at="2021-04-28T03:57:45 EDT" name="Default test" finished-at="2021-04-28T03:58:07 EDT" duration-ms="21892">
       <class name="Test_Model.Page_Model_SIGNUP_Test">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Test_Model.Page_Model_SIGNUP_Test@76908cc0]" started-at="2021-04-28T03:49:47 EDT" name="Setup" finished-at="2021-04-28T03:49:55 EDT" duration-ms="7838" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Test_Model.Page_Model_SIGNUP_Test@1f3f4916]" started-at="2021-04-28T03:57:45 EDT" name="Setup" finished-at="2021-04-28T03:57:55 EDT" duration-ms="9320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="OpenSignInPage()[pri:0, instance:Test_Model.Page_Model_SIGNUP_Test@76908cc0]" started-at="2021-04-28T03:50:36 EDT" name="OpenSignInPage" finished-at="2021-04-28T03:50:44 EDT" duration-ms="7882" status="PASS">
+        <test-method signature="OpenSignInPage()[pri:0, instance:Test_Model.Page_Model_SIGNUP_Test@1f3f4916]" started-at="2021-04-28T03:57:55 EDT" name="OpenSignInPage" finished-at="2021-04-28T03:58:04 EDT" duration-ms="9038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenSignInPage -->
-        <test-method signature="OpenSignUpPage()[pri:1, instance:Test_Model.Page_Model_SIGNUP_Test@76908cc0]" started-at="2021-04-28T03:50:44 EDT" name="OpenSignUpPage" finished-at="2021-04-28T03:50:47 EDT" duration-ms="3951" status="PASS">
+        <test-method signature="OpenSignUpPage()[pri:1, instance:Test_Model.Page_Model_SIGNUP_Test@1f3f4916]" started-at="2021-04-28T03:58:04 EDT" name="OpenSignUpPage" finished-at="2021-04-28T03:58:07 EDT" duration-ms="3494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenSignUpPage -->
       </class> <!-- Test_Model.Page_Model_SIGNUP_Test -->
-      <class name="Test_Model.Page_Factory_Signup_Test">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:Test_Model.Page_Factory_Signup_Test@1d119efb]" started-at="2021-04-28T03:49:41 EDT" name="Setup" finished-at="2021-04-28T03:49:47 EDT" duration-ms="6334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method signature="OpenSignInPage()[pri:0, instance:Test_Model.Page_Factory_Signup_Test@1d119efb]" started-at="2021-04-28T03:50:09 EDT" name="OpenSignInPage" finished-at="2021-04-28T03:50:19 EDT" duration-ms="10068" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenSignInPage -->
-        <test-method signature="OpenSignUpPage()[pri:0, instance:Test_Model.Page_Factory_Signup_Test@1d119efb]" started-at="2021-04-28T03:50:19 EDT" name="OpenSignUpPage" finished-at="2021-04-28T03:50:29 EDT" duration-ms="9899" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenSignUpPage -->
-      </class> <!-- Test_Model.Page_Factory_Signup_Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
