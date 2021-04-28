@@ -34,11 +34,12 @@ public class Page_Model_SIGNUP_Test {
 	}
 
 @Test (priority= 0)
-public void OpenSignInPage() {
+public void OpenSignInPage() throws InterruptedException {
 	String MainpageTitle= Y.MainpageTitle();
 	Assert.assertTrue(MainpageTitle.contains("My Store"));
 	System.out.println(MainpageTitle);
 	Y.Opensinginpage();
+	Thread.sleep(5000);
 	
 }
 

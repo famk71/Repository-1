@@ -21,10 +21,10 @@ public class Sign_Up_Form {
 	WebElement EmailAddress;
 	
 	@FindBys({	
-	@FindBy(className="icon-user left"),
+	@FindBy(id="SubmitCreate"),
 	@FindBy(xpath="//i[@class='icon-user left']")})
 	
-	 List<WebElement> CreateanAccount;			//this is for listing element, Where more than one button to click in the same place
+	 WebElement CreateanAccount;			//this is for listing element, Where more than one button to click in the same place
 	
 		
 	
@@ -37,7 +37,7 @@ public class Sign_Up_Form {
 	
 	@FindAll({
 	@FindBy(css="#customer_firstname")}) 		//This continues executing if it doesn't find any of the element and log it
-	List<WebElement> FirstName;
+	private WebElement FirstName;
 	
 	
 	@FindBy(css="#customer_lastname")
@@ -93,7 +93,7 @@ public class Sign_Up_Form {
 		}
 		
 		public void ClickCreatebutton()  {
-			CreateanAccount.get(0).click();							//This is a VOID method and returns No Value
+			CreateanAccount.click();					//This is a VOID method and returns No Value
 		//	CreateanAccount.get(1).click();
 		}
 		
@@ -106,8 +106,7 @@ public class Sign_Up_Form {
 		}
 		
 		public void Fname(String fname)  {
-			FirstName.get(0).sendKeys(fname);
-		
+			FirstName.sendKeys(fname);
 		}
 		
 		public void Lname(String lname)  {
