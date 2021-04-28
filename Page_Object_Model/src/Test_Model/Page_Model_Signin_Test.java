@@ -9,15 +9,18 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import Page_Model.Page_Object_Signin;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Page_Model_Signin_Test {
 
-	WebDriver Driver= new ChromeDriver();
+	WebDriver Driver;
 	Page_Object_Signin X;
 	Page_Object_Signin Y;
 @BeforeTest
 	public void Setup() {
-	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+	WebDriverManager.chromedriver().setup();
+	Driver= new ChromeDriver();
+	//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 	Driver.manage().window().maximize();
 	Driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	String URL1 = ("http://automationpractice.com/index.php");

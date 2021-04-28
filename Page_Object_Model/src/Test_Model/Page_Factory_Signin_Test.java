@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import Page_Factory.Sign_in_form;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Page_Factory_Signin_Test {
 	WebDriver Driver;
@@ -18,8 +19,9 @@ public class Page_Factory_Signin_Test {
 	
 @BeforeTest
 	public void Setup() {
+	WebDriverManager.chromedriver().setup();
 	Driver= new ChromeDriver();
-	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+	//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 	Driver.manage().window().maximize();
 	Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	String URL1 = ("http://automationpractice.com/index.php");

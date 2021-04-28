@@ -2,6 +2,7 @@ package Page_Factory;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -16,11 +17,18 @@ public class Sign_Up_Form {
 	WebDriver Driver;
 	
 	@FindBy(how= How.ID, using ="email_create")
+	
 	WebElement EmailAddress;
 	
-	@FindBys({							
+	@FindBys({	
+	@FindBy(className="icon-user left"),
 	@FindBy(xpath="//i[@class='icon-user left']")})
-	List<WebElement> CreateanAccount;			//this is for listing element, Where more than one button to click in the same place
+	
+	 List<WebElement> CreateanAccount;			//this is for listing element, Where more than one button to click in the same place
+	
+		
+	
+	
 	
 	@FindBy(css="#id_gender1")
 	WebElement Mr;
@@ -36,6 +44,7 @@ public class Sign_Up_Form {
 	WebElement LastName;
 	@FindBy(css="#passwd")
 	WebElement PassWord;
+	
 	@FindBy(css="#days")
 	WebElement Days;
 	@FindBy(css="#months")
@@ -70,6 +79,7 @@ public class Sign_Up_Form {
 	public Sign_Up_Form (WebDriver Driver) {
 		this.Driver= Driver;
 		PageFactory.initElements(Driver, this);
+
 	
 	}
 		
@@ -97,6 +107,7 @@ public class Sign_Up_Form {
 		
 		public void Fname(String fname)  {
 			FirstName.get(0).sendKeys(fname);
+		
 		}
 		
 		public void Lname(String lname)  {

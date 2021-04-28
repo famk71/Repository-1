@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import Page_Model.Page_Object_Signup;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import Page_Model.Page_Object_Signin;
 
 public class Page_Model_SIGNUP_Test {
@@ -21,13 +22,14 @@ public class Page_Model_SIGNUP_Test {
 	
 @BeforeTest
 	public void Setup() {
-	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+	WebDriverManager.chromedriver().setup();
+	//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 	Driver=new ChromeDriver();
 	Driver.manage().window().maximize();
 	Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	String URL1 = ("http://automationpractice.com/index.php");
 	Driver.get(URL1);
-	Y=new Page_Object_Signin(Driver);
+	Y= new Page_Object_Signin(Driver);
 	Z= new Page_Object_Signup(Driver);
 	}
 

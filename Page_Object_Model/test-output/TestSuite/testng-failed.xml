@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" name="testGuru(failed)">
+    <classes>
+      <class name="Parameter.Data_Provider">
+        <methods>
+          <include name="testMethodC"/>
+          <include name="testMethodA"/>
+          <include name="setup"/>
+          <include name="testMethodB"/>
+        </methods>
+      </class> <!-- Parameter.Data_Provider -->
+    </classes>
+  </test> <!-- testGuru(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

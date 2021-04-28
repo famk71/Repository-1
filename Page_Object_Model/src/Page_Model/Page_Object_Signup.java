@@ -41,6 +41,7 @@ public class Page_Object_Signup {
 	
 	public String createaccountpage() {
 		return driver.getTitle();       						   	 //This method returns a String value
+	
 	}
 	
 	
@@ -157,7 +158,7 @@ public class Page_Object_Signup {
 		this.ClickCreatebutton();
 		
 		//this.GenderMR();
-		this.GenderMR();
+		this.GenderMRS();
 		this.Fname(fname);
 		this.Lname(lname);
 		this.Password(password);

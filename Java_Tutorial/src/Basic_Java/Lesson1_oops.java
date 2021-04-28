@@ -27,7 +27,7 @@ public class Lesson1_oops {
 		
 		Driver.get("http://automationpractice.com/index.php");
 			//If "Driver" is the Ferrari "Get" is the GPS which navigates to the Location of the website.
-			  //Get is another method
+			  //Get is another method//
 		
 	
 	}
